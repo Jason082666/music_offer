@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>測驗中</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>請回答以下問題：</h1>
+      <p id="question"></p>
+      <input type="text" id="answer" />
+      <button onclick="submitAnswer()">提交答案</button>
+    </div>
+    <script src="{% static 'js/quiz.js' %}"></script>
+  </body>
+</html>
