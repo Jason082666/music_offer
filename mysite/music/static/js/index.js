@@ -1,3 +1,3 @@
-document.getElementById('startQuiz').addEventListener('click', function() {
-    window.location.href = '/quiz';
+$(".start-btn").click(() => {
+  window.location.href = "/quiz";
 });

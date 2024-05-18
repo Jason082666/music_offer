@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,15 +15,38 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background: url('{% static "images/4.jpg" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    </style>
     <title>questionaire</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}" />
   </head>
   <body>
-    <div class="container">
-      <h1>請回答以下問題：</h1>
-      <p id="question"></p>
-      <input type="text" id="answer" />
-      <button onclick="submitAnswer()">提交答案</button>
+    <div class="card">
+      <div class="card-header">Featured</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+        <div class="btn btn-secondary control-btn">下一題</div>
+      </div>
     </div>
     <script src="{% static 'js/quiz.js' %}"></script>
   </body>
