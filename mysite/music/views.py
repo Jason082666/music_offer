@@ -7,3 +7,7 @@ def index(request):
 
 def quiz(request):
     return render(request, 'quiz.html')
+
+
+def result(request):
+    return render(request, 'result.html')
