@@ -11,3 +11,6 @@ def quiz(request):
 
 def result(request):
     return render(request, 'result.html')
+
+def album(request):
+    return render(request, 'album.html')
