@@ -32,8 +32,8 @@ iframe {
 }
 
 .song-name {
-  margin-top: 8vh;
-  font-size: 40px;
+  margin-top: 5vh;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -46,7 +46,7 @@ iframe {
   color: #fff;
   font-size: 36px;
   line-height: 2;
-  margin-top: 22vh;
+  margin-top: 20vh;
   margin-right: 15vw;
   white-space: normal;
   word-wrap: break-word;
@@ -65,4 +65,9 @@ iframe {
   to {
     top: -100%;
   }
+}
+
+.description {
+  font-size: 30px;
+  color: aliceblue;
 }

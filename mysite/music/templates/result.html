@@ -33,26 +33,17 @@
   </head>
   <body>
     <div class="container">
-      <div class="song-name">推薦給你：</div>
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/2nnahp87DGU?si=1k0OzSkWMVd0WNt7"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+      <div class="song-name">
+        您的 MBTI 人格為 ENFP，依據您的心情我們將推薦給你這首歌 :
       </div>
+      <div class="video-container"></div>
+      <div class="description author"></div>
+      <div class="description ch-song-name"></div>
+      <div class="description eng-song-name"></div>
       <button type="button" class="btn btn-secondary buy-btn">購買專輯</button>
     </div>
     <div class="scrolling-credits">
-      <div class="credits-text">
-        這首歌是由 XXX 製作，YYY
-        演唱，是一首風格獨特的歌曲。它的歌詞富含深刻的情感表達，旋律悅耳動聽。此曲已在多個音樂榜單上獲得高位排名，深受廣大樂迷喜愛。
-      </div>
+      <div class="credits-text"></div>
     </div>
     <script src="{% static 'js/result.js' %}"></script>
   </body>
