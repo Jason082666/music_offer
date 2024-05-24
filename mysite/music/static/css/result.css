@@ -71,3 +71,9 @@ iframe {
   font-size: 30px;
   color: aliceblue;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* 添加按钮之间的间距 */
+}

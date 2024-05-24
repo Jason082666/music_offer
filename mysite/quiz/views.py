@@ -94,7 +94,7 @@ class CheckAnswerView(APIView):
         print(filtered_df)
         random_row = filtered_df.sample(n=1)
 
-        result = random_row[['曲目（英）','曲目（中）','作曲家','MBTI','YT連結','作曲家簡介']].to_dict(orient='records')
+        result = random_row[['曲目（英）','曲目（中）','作曲家','MBTI','YT連結','作曲家簡介','專輯名稱','演奏家','購買平台','價錢','購買連結']].to_dict(orient='records')
         print(result)
 
         return Response({"result": result}, status=status.HTTP_200_OK)

@@ -1,0 +1,28 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 使容器占满整个视窗高度 */
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 将内容和按钮放置在两端 */
+  width: 80%; /* 使卡片更宽 */
+  max-width: 600px; /* 设置最大宽度 */
+  height: 70vh; /* 使卡片更高 */
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 添加按钮之间的间距 */
+}
+
+p {
+  font-size: 20px;
+}

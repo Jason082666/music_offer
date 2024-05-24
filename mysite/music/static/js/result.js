@@ -1,6 +1,6 @@
 let apiResponse = JSON.parse(localStorage.getItem("apiResponse"));
-let responseData = apiResponse.result[0];
-console.log(responseData);
+let responseData = apiResponse ? apiResponse.result[0] : {};
+
 
 let composer = responseData["作曲家"] || "未知作曲家";
 let engSongName = responseData["曲目（英）"] || "未知英文曲名";
@@ -13,3 +13,11 @@ $(".eng-song-name").text(`英文曲名：${engSongName}`);
 $(".ch-song-name").text(`中文取名：${chSongName}`);
 $(".credits-text").text(description);
 $(".video-container").html(ytLink);
+$(".btn-container").on("click", ".startover", () => {
+  localStorage.clear();
+  window.location.href = "/";
+});
+
+$(".btn-container").on("click", ".buy-btn", () => {
+  window.location.href = "/album";
+});

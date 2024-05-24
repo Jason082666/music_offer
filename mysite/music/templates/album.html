@@ -20,10 +20,35 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <title>questionaire</title>
+    <title>album</title>
+    <style>
+      body {
+        background: url('{% static "images/6.jpg" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    </style>
     <link rel="stylesheet" href="{% static 'css/album.css' %}" />
   </head>
   <body>
+    <div class="container">
+      <div class="card">
+        <h2>我們為您找到最便宜的購買平台</h2>
+        <p class="album-title">專輯名稱</p>
+        <p class="album-artist"></p>
+        <p class="album-price">價格：NT$0</p>
+        <p class="album-platform">購買平台</p>
+        <div class="btn-container">
+          <a class="btn btn-primary btn-custom buy-btn" target="_blank"
+            >點我購買</a
+          >
+          <button type="button" class="btn btn-secondary startover">
+            返回主頁
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="{% static 'js/album.js' %}"></script>
   </body>
 </html>
