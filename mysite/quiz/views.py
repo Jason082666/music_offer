@@ -93,6 +93,6 @@ class CheckAnswerView(APIView):
         filtered_df = df[(df['MBTI'] == result) & (df['情緒'] == emotion)]
         random_row = filtered_df.sample(n=1)
 
-        result = random_row[['曲目（英）','作曲家','MBTI','YT連結','作曲家簡介','專輯名稱','演奏家','購買平台','價錢','購買連結']].to_dict(orient='records')
+        result = random_row[['曲目（英）','作曲家','MBTI','情緒','YT連結','作曲家簡介','專輯名稱','演奏家','購買平台','價錢','購買連結']].to_dict(orient='records')
 
         return Response({"result": result}, status=status.HTTP_200_OK)
