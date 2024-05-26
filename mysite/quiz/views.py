@@ -90,11 +90,9 @@ class CheckAnswerView(APIView):
         df = pd.read_excel(file_path, sheet_name='工作表1')
 
         # 篩選出對應的曲目和專輯名稱
-        filtered_df = df[(df['MBTI'] == 'INTJ') & (df['情緒'] == '悲傷的')]
-        print(filtered_df)
+        filtered_df = df[(df['MBTI'] == result) & (df['情緒'] == emotion)]
         random_row = filtered_df.sample(n=1)
 
-        result = random_row[['曲目（英）','曲目（中）','作曲家','MBTI','YT連結','作曲家簡介','專輯名稱','演奏家','購買平台','價錢','購買連結']].to_dict(orient='records')
-        print(result)
+        result = random_row[['曲目（英）','作曲家','MBTI','YT連結','作曲家簡介','專輯名稱','演奏家','購買平台','價錢','購買連結']].to_dict(orient='records')
 
         return Response({"result": result}, status=status.HTTP_200_OK)
